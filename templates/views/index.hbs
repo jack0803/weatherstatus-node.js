@@ -1,0 +1,32 @@
+{{!-- this file nothing but an html because vscode contains built in featurs thats why it display mustach logo on extention of .hbs --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>use this site to get weather updates!</p>
+        <form>
+            <input type="text" placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id="forecast"></p>
+        <p id="position"></p> 
+    </div>
+
+
+
+
+    {{!-- accessing data which came from app.js (dynamic data) --}}
+    {{!-- <h2>{{title}}</h2> --}}
+    <h2>{{name}}</h2>
+    {{>footer}}
+    <script src="./JS/app.js"></script>
+</body>
+</html>
